@@ -1,4 +1,7 @@
-﻿namespace PortalWebEconomiza.Models
+﻿// Models/ProdutoConsultado.cs
+using System.ComponentModel.DataAnnotations;
+
+namespace PortalWebEconomiza.Models
 {
     public class ProdutoConsultado
     {
@@ -21,8 +24,8 @@
         public string? Cep { get; set; }
         public int CodigoIBGE { get; set; }
         public string? Municipio { get; set; }
+
+        [Display(Name = "Data da Consulta")]
         public DateTime DataConsulta { get; set; }
-        public string? DescricaoExterna { get; set; }
-        public bool ProdutoValedourado { get; set; } // Nova coluna do tipo bool
     }
 }
